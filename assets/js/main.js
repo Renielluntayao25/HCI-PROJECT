@@ -164,22 +164,6 @@
 
 })()
 
-  function adjustFormLayout() {
-      var form = document.getElementById('booking-form');
-      var formWidth = form.offsetWidth;
-      var screenWidth = window.innerWidth;
-
-      if (formWidth > screenWidth) {
-        form.style.maxWidth = screenWidth - 20 + 'px';
-      } else {
-        form.style.maxWidth = '400px';
-      }
-    }
-
-    // Adjust form layout on page load and window resize
-    window.addEventListener('load', adjustFormLayout);
-    window.addEventListener('resize', adjustFormLayout);
-
 //BOOKING FORM  after click submit
 const form = document.querySelector('form');
     const thankYouMessage = document.getElementById('thank-you-message');
